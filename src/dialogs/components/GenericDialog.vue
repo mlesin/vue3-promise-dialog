@@ -29,13 +29,13 @@ defineExpose<{
     <template #body>
       <div style="padding: 20px">
         <span class="p-float-label">
-          <InputText
+          <input
             v-if="typeof genValue === 'string'"
             id="field"
             type="text"
             v-model="innerValue"
           />
-          <InputText v-else id="field" type="number" v-model="innerValue" />
+          <input v-else id="field" type="number" v-model="innerValue" />
           <label for="field">Some Label</label>
         </span>
       </div>

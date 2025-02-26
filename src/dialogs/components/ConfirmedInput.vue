@@ -4,7 +4,7 @@
     <template #body>
       <div style="padding: 20px">
         <span class="p-float-label">
-          <InputText
+          <input
             id="username"
             type="text"
             v-model="text"
@@ -12,13 +12,14 @@
           />
           <label for="username">{{ label }}</label>
         </span>
-        <Button
-          label="Open nested"
+        <button
           type="button"
           class="p-button-raised"
           style="margin-right: 10px"
           @click="openNested"
-        />
+        >
+          Open nested
+        </button>
       </div>
     </template>
   </OkCancelBox>

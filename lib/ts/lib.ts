@@ -1,6 +1,7 @@
 import {
   AllowedComponentProps,
   Component,
+  ShallowUnwrapRef,
   VNodeProps,
   shallowReactive,
 } from "vue";
@@ -50,6 +51,8 @@ type BindingReturnType<C extends Component> = C extends new (
     : never
   : C extends (__VLS_props: any, __VLS_ctx: any, __VLS_setup: infer Y) => any
   ? Y extends { expose: (exposed: { returnValue: () => infer Q }) => any }
+    ? Q
+    : Y extends (exposed: { returnValue: () => infer Q }) => any
     ? Q
     : never
   : never;

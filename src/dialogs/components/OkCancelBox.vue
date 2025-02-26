@@ -8,20 +8,22 @@
         <slot name="body"></slot>
       </div>
       <div class="footer">
-        <Button
-          :label="cancelLabel"
+        <button
           type="button"
           class="p-button-raised"
           style="margin-right: 10px"
           @click="closeDialog(null)"
-        />
-        <Button
-          :label="okLabel"
+        >
+          {{ cancelLabel }}
+        </button>
+        <button
           type="submit"
           class="p-button-raised"
           @click="closeDialog()"
           :disabled="!valid"
-        />
+        >
+          {{ okLabel }}
+        </button>
       </div>
     </form>
   </Box>

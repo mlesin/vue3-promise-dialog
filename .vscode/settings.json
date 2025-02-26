@@ -1,4 +1,9 @@
 {
   "files.exclude": {},
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#1C303E",
+    "titleBar.activeBackground": "#274356",
+    "titleBar.activeForeground": "#FAFCFD"
+  }
 }

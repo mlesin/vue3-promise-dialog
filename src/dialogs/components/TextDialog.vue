@@ -4,7 +4,7 @@
     <template #body>
       <div style="padding: 20px">
         <span class="p-float-label">
-          <InputText id="username" type="text" v-model="text" />
+          <input id="username" type="text" v-model="text" />
           <label for="username">{{ label }}</label>
         </span>
       </div>

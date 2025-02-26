@@ -5,19 +5,11 @@
     close the dialog the promise resolves with the value entered into the dialog
     and that value is printed below.
   </p>
-  <Button @click="onTestConfirm" label="Test confirm dialog" class="m-3" />
-  <Button @click="onTestText" label="Test prompt text dialog" class="m-3" />
-  <Button @click="onNestedDialog" label="Test nested dialogs" class="m-3" />
-  <Button
-    @click="onGenericDialogNumber"
-    label="Test generic dialog (number)"
-    class="m-3"
-  />
-  <Button
-    @click="onGenericDialogString"
-    label="Test generic dialog (string)"
-    class="m-3"
-  />
+  <button @click="onTestConfirm">Test confirm dialog</button>
+  <button @click="onTestText">Test prompt text dialog</button>
+  <button @click="onNestedDialog">Test nested dialogs</button>
+  <button @click="onGenericDialogNumber">Test generic dialog (number)</button>
+  <button @click="onGenericDialogString">Test generic dialog (string)</button>
   <div class="console">
     <div class="console-item" v-for="(text, index) in items" :key="index">
       {{ text }}
